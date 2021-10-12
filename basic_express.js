@@ -50,6 +50,10 @@ app.get('/jason', function (req, res) {
     career: readprofiles.Jason.career
 })
 });
+app.get('/feedback', function (res,req) {
+  console.log(req.query.name)
+
+});
 var server = app.listen(8000, function () {
   var host = server.address().address;
   var port = server.address().port;
